@@ -1,3 +1,5 @@
+/*********************** nav ***********************/
+
 nav {
   box-shadow: 0 0 5px 0 rgba(0,0,0,0.25);
 }
@@ -12,4 +14,58 @@ nav {
   font-family: Amiko;
   font-weight: bold;
   padding-top: 1em;
+}
+
+/*********************** jumbotron ***********************/
+
+.jumbotron {
+  background-color: #222;
+  padding: 0;
+  margin: 0;
+}
+
+.jumbotron h1 {
+  font-family: Yellowtail;
+}
+
+.jumbotron #secondary-brand {
+  color: #9e62ca;
+  font-family: Amiko;
+  font-size: 0.55em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: -0.1em;
+  display: block;
+  margin-top: -.25em;
+}
+
+#logo-wrapper {
+  background: url('../img/final_no_background.png') no-repeat;
+  background-position: 30%;
+  background-size: 500px;
+  background-color: rgba(0,0,0,0.50);
+  background-blend-mode: darken;
+}
+
+#brand-wrapper {
+  margin: 4rem auto 0;
+  padding: 2rem;
+  max-width: 400px;
+}
+
+@media only screen and (max-width: 575px) {
+  .jumbotron h1{
+    font-size: 4em;
+  }
+
+  .jumbotron * {
+    text-align: center;
+  }
+
+  #logo-wrapper {
+    background-position: 10%;
+    background-size: 250px;
+    background-color: rgba(0,0,0,0.50);
+    background-blend-mode: darken;
+  }
 }
