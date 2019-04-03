@@ -19,7 +19,7 @@ nav {
 /*********************** jumbotron ***********************/
 
 .jumbotron {
-  background-color: #222;
+  background: linear-gradient(90deg, #555 0%, #222 50%, #555);
   padding: 0;
   margin: 0;
 }
@@ -56,6 +56,7 @@ nav {
 @media only screen and (max-width: 575px) {
   .jumbotron h1{
     font-size: 4em;
+    margin-top: 1rem;
   }
 
   .jumbotron * {
