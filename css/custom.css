@@ -85,6 +85,11 @@ h1, h2, .yellowtail {
   font-family: Yellowtail;
 }
 
+.amiko {
+  font-family: Amiko;
+  font-weight: bold;
+}
+
 .button-icon {
   position: relative;
   top: 3px;
@@ -124,6 +129,12 @@ h1, h2, .yellowtail {
   color: white;
 }
 
+.btn-outline-yellow {
+  border: 1px solid #FFBC42;
+  color: #FFBC42;
+  background-color: rgba(0,0,0,0);
+}
+
 .btn-outline-purple {
   border: 1px solid #9E62CA;
   background-color: rgba(0,0,0,0);
@@ -142,4 +153,9 @@ nav {
 #site-footer {
   background-color: #eee;
   padding: 1.5em 0;
+}
+
+#faq-accordion button {
+  color: #9E62CA;
+  text-decoration: none;
 }
