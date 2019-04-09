@@ -55,24 +55,51 @@
 
   <div class="container" id="main-content">
     <!-- about -->
-    <div id="about">
+    <section id="about" class="mb-4">
       <div class="row">
-        <div class="col-3 text-center">
-          <img src="img/print-logo.png" class="img-fluid" alt="">
-        </div>
         <div class="col-9">
           <h2 class="mt-5 text-muted">About our Company</h2>
-          <p>Creatively Cannabis was founded in 2018 with a vision of fun, alternative events for cannabis enthusiasts.</p>
+          <p class="lead">Creatively Cannabis was founded with a vision of fun, alternative events for cannabis enthusiasts.</p>
           <div class="collapse" id="about-collapse">
             <p>Owner and lead artist Keila Castillo had prior experience creating dynamic "paint and sip" events while living on the East Coast. After moving to Denver in 2016, she envisioned an alternative option. Marijuana tends to increase an individual's creativity and responsiveness to all things artistic. So, naturally, the idea to pair painting and cannibis arose.</p>
-            <p>Passionate about legislation and often changing marijuana reform, Keila wanted her business to help people to stay informed and proactive. Thus, the Highdeas Pot-cast was created! The Pot-cast features artists, musicians, activists, and entrepreneurs from the East and West Coast. </p>
+            <p>Passionate about legislation and often changing marijuana reform, Keila wanted her business to help people to stay informed and proactive. Thus, the Highdeas Pot-cast was created! The Pot-cast features artists, musicians, activists, and entrepreneurs from the East and West Coast.</p>
           </div>
           <button id="about-toggle" class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#about-collapse">
-            read more
+            read more <i class="material-icons button-icon">expand_more</i>
           </button>
         </div>
+        <div class="col-3 text-center">
+          <img src="img/print-logo.png" class="img-fluid" alt="">
+          <h3 class="yellowtail text-muted lead">established 2018</h3>
+        </div>
       </div>
-    </div><!-- /about -->
+    </section><!-- /about -->
+
+    <!-- attend -->
+    <section id="attend" class="mt-5">
+      <h2 class="text-muted text-center pb-3">Attend an Event</h2>
+      <div class="row">
+        <div class="col">
+          <i class="material-icons col-icon theme-yellow">business</i>
+          <h3 class="lead text-center">venue</h3>
+          <p>Join us for a unique cannabis events at Denver's <strong>only</strong> social consumption venue, The Coffee Joint!</p>
+          <p>Snacks and beverages are available for purchase, while coffee and hot tea are complimentary.</p>
+        </div>
+        <div class="col">
+          <i class="material-icons col-icon theme-purple">format_list_bulleted</i>
+          <h3 class="lead text-center">how to prepare</h3>
+          <p>Participants are encouraged to show up 30 minutes early. Give yourself plenty of time to get comfortable and consume your marijuana.</p>
+          <p>All cannabis is BYOC (bring-your-own-cannabis). There is a dispensary next door @ 1136 Yuma, if you need to purchase some for the event.</p>
+        </div>
+        <div class="col">
+          <i class="material-icons col-icon theme-red">photo</i>
+          <h3 class="lead text-center">what to expect</h3>
+          <p>Instruction will begin no later than 10 minutes after the event start time.</p>
+          <p>Your instructor has years of experience and is able to guide you in creating a beautiful painting, regardless of past experience or skill level.</p>
+        </div>
+      </div>
+    </section>
+    <!-- /atttend -->
 
     <!-- mailing-list -->
     <div class="container mt-5 text-center text-muted">
@@ -88,14 +115,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-  <script>
-     $('#about-collapse').on('hidden.bs.collapse', function () {
-       $('#about-toggle').text('read more');
-     });
-     $('#about-collapse').on('shown.bs.collapse', function () {
-       $('#about-toggle').text('read less');
-     });
-    </script>
+  <script>$('#about-toggle').click(function () { $('#about-toggle').hide(); });</script>
 
 </body>
 </html>

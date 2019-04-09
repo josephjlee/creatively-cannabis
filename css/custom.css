@@ -2,6 +2,8 @@
   color palette:  https://coolors.co/9e62ca-75dddd-d90368-ffbc42-0d3b66
 */
 
+
+
 #age-confirm {
   font-size: 2rem;
 }
@@ -77,4 +79,38 @@ nav {
     background-color: rgba(0,0,0,0.50);
     background-blend-mode: darken;
   }
+}
+
+h1, h2, .yellowtail {
+  font-family: Yellowtail;
+}
+
+.button-icon {
+  position: relative;
+  top: 3px;
+  font-size: 1rem;
+}
+
+.col-icon {
+    font-size: 5rem;
+    color: #ddd;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.theme-purple {
+  color: #9E62CA;
+}
+.theme-blue {
+  color: #75DDDD;
+}
+.theme-red {
+  color: #D90368;
+}
+.theme-yellow {
+  color: #FFBC42;
+}
+.theme-darkblue {
+  color: #0D3B66;
 }
