@@ -50,17 +50,49 @@
   </div>
   <!-- /jumbotron -->
 
-  <!-- main content -->
-  <div class="container mt-5 text-center text-muted">
-    <h2>Stay Tuned</h2>
-    <p class="lead">Please join our mailing list for updates on upcoming events and services.</p>
-    <a href="http://eepurl.com/gmTW4b" target="blank"><button class="btn">SIGN ME UP</button></a>
+  <div class="container" id="main-content">
+    <!-- about -->
+    <div id="about">
+      <div class="row">
+        <div class="col-3 text-center">
+          <img src="img/print-logo.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-9">
+          <h2 class="mt-5 text-muted">About our Company</h2>
+          <p>Creatively Cannabis was founded in 2018 with a vision of fun, alternative events for cannabis enthusiasts.</p>
+          <div class="collapse" id="about-collapse">
+            <p>Owner and lead artist Keila Castillo had prior experience creating dynamic "paint and sip" events while living on the East Coast. After moving to Denver in 2016, she envisioned an alternative option. Marijuana tends to increase an individual's creativity and responsiveness to all things artistic. So, naturally, the idea to pair painting and cannibis arose.</p>
+            <p>Passionate about legislation and often changing marijuana reform, Keila wanted her business to help people to stay informed and proactive. Thus, the Highdeas Pot-cast was created! The Pot-cast features artists, musicians, activists, and entrepreneurs from the East and West Coast. </p>
+          </div>
+          <button id="about-toggle" class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#about-collapse">
+            read more
+          </button>
+        </div>
+      </div>
+    </div><!-- /about -->
+
+    <!-- mailing-list -->
+    <div class="container mt-5 text-center text-muted">
+      <h2>Stay Tuned</h2>
+      <p class="lead">Please join our mailing list for updates on upcoming events and services.</p>
+      <a href="http://eepurl.com/gmTW4b" target="blank"><button class="btn">SIGN ME UP</button></a>
+    </div><!-- /mailing-list -->
+
   </div>
 
   <!-- deferred scripts -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <script>
+     $('#about-collapse').on('hidden.bs.collapse', function () {
+       $('#about-toggle').text('read more');
+     });
+     $('#about-collapse').on('shown.bs.collapse', function () {
+       $('#about-toggle').text('read less');
+     });
+    </script>
 
 </body>
 </html>
