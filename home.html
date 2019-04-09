@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="css/custom.css">
 
 </head>
-<body>
+<body id="home">
 
   <!-- navbar -->
   <nav id="navbar" class="navbar navbar-expand-md navbar-light bg-light">
@@ -282,12 +282,18 @@
     </div>
   </footer> <!-- /site-footer -->
 
-  <!-- deferred scripts -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <!-- back-to-top -->
+  <div id="back-to-top" class="material-icons" style="display: none;">arrow_upward</div>
+
+  <!-- external deferred scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-  <script>$('#about-toggle').click(function () { $('#about-toggle').hide(); });</script>
-
+  <!-- deferred inline scripts -->
+  <!-- js: about-dropdown --><script>$('#about-toggle').click(function () { $('#about-toggle').hide(); });</script>
+  <!-- js: back-to-top --><script charset="utf-8">var btt="#back-to-top",btt_button=$(btt)[0];function setButtonDisplay(){document.body.scrollTop>100||document.documentElement.scrollTop>100?($(btt).fadeIn(),btt_button.style.display="block"):$(btt).fadeOut()}btt_button.style.cursor="pointer",window.onscroll=(()=>{setButtonDisplay()}),btt_button.addEventListener("click",()=>{$("#home")[0].scrollIntoView({behavior:"smooth"})});</script>
+  <!-- js: smooth-scroll --><script>$(document).on("click",'a[href^="#"]',function(t){t.preventDefault(),$("html, body").animate({scrollTop:$($.attr(this,"href")).offset().top},500)});</script>
+  
 </body>
 </html>
