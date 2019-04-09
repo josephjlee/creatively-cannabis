@@ -117,3 +117,12 @@ h1, h2, .yellowtail {
 .theme-green {
   color: #7ED957;
 }
+
+nav {
+  border-bottom: 3px solid #9E62CA;
+}
+
+#site-footer {
+  background-color: #eee;
+  padding: 1.5em 0;
+}
