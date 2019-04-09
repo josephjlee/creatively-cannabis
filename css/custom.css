@@ -118,6 +118,23 @@ h1, h2, .yellowtail {
   color: #7ED957;
 }
 
+.btn-purple {
+  border: 1px solid #9E62CA;
+  background-color: #9E62CA;
+  color: white;
+}
+
+.btn-outline-purple {
+  border: 1px solid #9E62CA;
+  background-color: rgba(0,0,0,0);
+  color: #9E62CA;
+}
+.btn-outline-red {
+  border: 1px solid #D90368;
+  background-color: rgba(0,0,0,0);
+  color: #D90368;
+}
+
 nav {
   border-bottom: 3px solid #9E62CA;
 }
