@@ -169,10 +169,15 @@ h1, h2, .yellowtail {
   font-weight: normal;
   line-height: 0.75rem;
   color: #9E62CA;
+  cursor: pointer;
 }
 
 #faq-accordion .card-body p:last-child, #faq-accordion-2 .card-body p:last-child  {
   margin-bottom: 0;
+}
+
+.accordion .card-body p {
+  text-align: left;
 }
 
 #back-to-top {
