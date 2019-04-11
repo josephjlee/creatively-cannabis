@@ -94,6 +94,7 @@ h1, h2, .yellowtail {
   position: relative;
   top: 3px;
   font-size: 1rem;
+  margin-left: 8px;
 }
 
 .col-icon {
@@ -140,10 +141,23 @@ h1, h2, .yellowtail {
   background-color: rgba(0,0,0,0);
   color: #9E62CA;
 }
+
+.btn-outline-purple:active, .btn-outline-purple:hover {
+  border: 1px solid #9E62CA;
+  background-color: #9E62CA;
+  color: white;
+}
+
 .btn-outline-red {
   border: 1px solid #D90368;
   background-color: rgba(0,0,0,0);
   color: #D90368;
+}
+
+.btn-outline-red:active, .btn-outline-red:hover {
+  border: 1px solid #D90368;
+  background-color: #D90368;
+  color: white;
 }
 
 #site-footer {
