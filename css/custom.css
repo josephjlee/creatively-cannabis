@@ -211,3 +211,7 @@ svg.social-icon {
   fill: #9E62CA;
   padding-left: 7px;
 }
+
+.team-profile-img {
+  max-width: 200px;
+}
