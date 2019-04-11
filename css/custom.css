@@ -160,6 +160,18 @@ h1, h2, .yellowtail {
   color: white;
 }
 
+.btn-outline-green {
+  border: 1px solid #7ED957;
+  background-color: rgba(0,0,0,0);
+  color: #7ED957;
+}
+
+.btn-outline-green:active, .btn-outline-green:hover {
+  border: 1px solid #7ED957;
+  background-color: #7ED957;
+  color: white;
+}
+
 #site-footer {
   background-color: #eee;
   padding: 1.5em 0;
