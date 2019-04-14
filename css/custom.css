@@ -32,6 +32,7 @@ nav {
   background: linear-gradient(90deg, #555 0%, #222 50%, #555);
   padding: 0;
   margin: 0;
+  margin-top: 70px;
 }
 
 .jumbotron h1 {
